@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://di4nimem1ayyw"]
+[gd_scene load_steps=2 format=3 uid="uid://di4nimem1ayyw"]
+
+[ext_resource type="Script" path="res://TeamMember1/start_menu.gd" id="1_n0wb4"]
 
 [node name="StartMenu" type="Control"]
 layout_mode = 3
@@ -7,6 +9,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_n0wb4")
+scene = "res://TeamMember1/box_level.tscn"
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 layout_mode = 1
@@ -40,3 +44,5 @@ text = "Credits"
 [node name="ButtonExit" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 text = "Exit"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ButtonPlay" to="." method="_on_button_play_pressed"]
