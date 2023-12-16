@@ -11,13 +11,8 @@ config_version=5
 [application]
 
 config/name="Godot Team Project Template - Change Title"
-run/main_scene="res://TeamMember2/introduction_splash.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://images/icon.svg"
-
-[autoload]
-
-GameManager="*res://TeamMember2/game_manager.tscn"
 
 [input]
 
