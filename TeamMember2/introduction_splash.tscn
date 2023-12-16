@@ -83,6 +83,7 @@ albedo_color = Color(1, 0, 1, 1)
 
 [node name="IntroductionSplash" type="Node3D"]
 script = ExtResource("1_0edse")
+scene = "res://TeamMember1/start_menu.tscn"
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.875, -0.433013, 0.216506, 0.216506, 0.75, 0.625, -0.433013, -0.5, 0.75, -1, 4, 6)
@@ -98,7 +99,6 @@ libraries = {
 autoplay = "splash"
 
 [node name="Marker3D" type="Marker3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Marker3D"]
 mesh = SubResource("BoxMesh_4g23x")
